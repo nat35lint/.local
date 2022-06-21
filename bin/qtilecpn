@@ -1,0 +1,31 @@
+#!/bin/bash
+
+rm -rf ~/.config/qtile
+
+cp -r ~/bak/qtilecpn ~/.config/
+
+cd ~/.config
+
+mv qtilecpn qtile
+
+cd
+
+rm -rf ~/.config/kitty
+
+cp -r ~/bak/kittycpn ~/.config
+
+cd ~/.config
+
+mv kittycpn kitty
+
+cd
+
+rm -rf ~/.config/cava
+
+cp -r ~/bak/cavacpn ~/.config
+
+cd ~/.config
+
+mv cavacpn cava
+
+cd

@@ -1,0 +1,11 @@
+#/bin/sh
+
+rm -rf ~/.config/kitty
+
+cp -r ~/.local/backups/kittygvb ~/.config/
+
+cd ~/.config/
+
+mv kittygvb kitty
+
+cd

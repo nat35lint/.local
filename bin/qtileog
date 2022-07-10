@@ -3,7 +3,7 @@
 rm -rf ~/.config/qtile
 
 
-cp -r ~/bak/qtileog ~/.config/
+cp -r ~/.local/backups/qtileog ~/.config/
 
 cd ~/.config
 
@@ -13,7 +13,7 @@ cd
 
 rm -rf ~/.config/kitty
 
-cp -r ~/bak/kittyog ~/.config/
+cp -r ~/.local/backups/kittyog ~/.config/
 
 cd ~/.config
 

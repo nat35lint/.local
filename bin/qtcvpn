@@ -2,7 +2,7 @@
 
 rm -rf ~/.config/qtile
 
-cp -r ~/bak/qtilecpn ~/.config/
+cp -r ~/.local/backups/qtilecpn ~/.config/
 
 cd ~/.config
 
@@ -12,7 +12,7 @@ cd
 
 rm -rf ~/.config/kitty
 
-cp -r ~/bak/kittycpn ~/.config
+cp -r ~/.local/backups/kittycpn ~/.config
 
 cd ~/.config
 
@@ -22,7 +22,7 @@ cd
 
 rm -rf ~/.config/cava
 
-cp -r ~/bak/cavacpn ~/.config
+cp -r ~/.local/backups/cavacpn ~/.config
 
 cd ~/.config
 

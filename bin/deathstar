@@ -1,0 +1,34 @@
+#!/bin/bash
+cd ~/.local/bin
+
+./kittygvb
+
+cd
+
+cp -r ~/.local/dwm ~/.config
+
+cd ~/.config/dwm/dwm
+
+sudo make clean install
+
+cd
+
+cp -r ~/.local/dmenu ~/.config/
+
+cd ~/.config/dmenu/dmenu
+
+sudo make clean install
+
+cd
+
+cd ~/.local/backups
+
+cp -r .profile ~/
+
+cp -r nvim ~/.config
+
+cp -r .zshrc ~/
+
+cd
+
+yay -S ttf-font-awesome dwm zsh zsh-completions neovim kitty sxhkd picom

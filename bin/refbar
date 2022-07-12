@@ -1,0 +1,2 @@
+#!/bin/sh
+kill -40 "$(cat ~/.cache/pidofbar)"

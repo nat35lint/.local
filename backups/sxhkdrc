@@ -3,6 +3,9 @@
 super + w
 	"firefox"
 
+super + shift + w
+    "qutebrowser"
+
 #brightness
 
 XF86MonBrightnessUp
@@ -11,8 +14,22 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	xbacklight -dec 5
 
+alt + shift + k
+	xbacklight -inc 5
+alt + shift + j
+	xbacklight -dec 5
+
 #volume
 
+alt + shift + h
+	amixer sset Master 5%+
+
+alt + shift + l
+	amixer sset Master 5%-
+
+alt + shift + x
+	amixer sset Master toggle
+	
 XF86AudioRaiseVolume
 	amixer sset Master 5%+
 
@@ -22,12 +39,57 @@ XF86AudioLowerVolume
 XF86AudioMute
 	amixer sset Master toggle
 
+# pause and play songs
+
+alt + q
+	playerctl play-pause
+
+alt + w
+	playerctl --player=mpd play-pause
+
+alt + shift + q
+	playerctl --player=mpd previous
+
+alt + shift + w
+	playerctl --player=mpd next
+
+alt + z
+	playerctl stop
+
 # flameshot
 
 super + Print
 	flameshot gui
 
+alt + p
+	flameshot gui
+	
 # blueman
 
 super + shift + b
 	blueman-manager
+
+# i3lock
+
+super + shift + c
+	i3lock -c "#32302f"
+
+# shutdown and reboot
+
+super + ctrl + shift + x
+	systemctl poweroff
+
+super + ctrl + shift + r 
+	systemctl reboot
+
+# typing test
+alt + t
+    kitty -e typioca
+
+# file managerr
+alt + f
+    pcmanfm
+
+# ncmpcpp
+alt + shift + n
+    kitty -e ncmpcpp

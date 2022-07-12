@@ -1,0 +1,10 @@
+#!/bin/sh
+
+name=$(whiptail --inputbox "insert your name" 10 30 3>&1 1>&2 2>&3)
+whiptail --msgbox "this will remove and overwrie your file" 10 30
+whiptail --yesno "are you really sure? $name" --yes-button "yes do as I sayt" --no-button "No Return" 10 60 
+
+
+
+
+
